@@ -24,7 +24,7 @@ In order to run the provided solution the following software will need to be ins
 2. Open the repository folder and install the dependencies using `yarn` or `npm install`.
 3. Run the development server using `yarn start` or `npm start`.
 
-The repository contains a `App.jsx` file inside the `components` folder; this should be the starting point for your exercise. Please feel free to create more components to structure your app in a logical manner.
+The repository contains a `App.tsx` file inside the `components` folder; this should be the starting point for your exercise. Please feel free to create more components to structure your app in a logical manner.
 
 The repository also contains an API endpoint mocked using MirageJS. This can be accessed when running the development server at the URL `/api/posts`.
 
