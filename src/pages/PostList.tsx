@@ -27,9 +27,10 @@ const breadcrumbs = [
 
 function PostList() {
     const [posts, setPosts] = useState<any[]>([]);
-    const [vissible, setvissible] = useState<number>(10);
+    const [visible, setVisible] = useState<number>(10);
     const [categories, setCategory] = useState(null);
 
+    // get data from api
     useEffect(() => {
         fetch('/api/posts')
             .then((res) => res.json())
@@ -37,8 +38,9 @@ function PostList() {
             .catch((err) => console.log(err))
     }, []);
 
+    // show more function that add 10 for previous data count
     const showMorePost = () => {
-        setvissible((prevValue) => prevValue + 10)
+        setVisible((prevValue) => prevValue + 10)
     }
 
     return (
@@ -48,7 +50,8 @@ function PostList() {
             </Breadcrumbs>
             {posts.length > 0 ? (
                 <div>
-                    { posts.slice(0, vissible).map( (post, index) => (
+                    <!-- map posts and loop through the posts and visible only 10-->
+                    { posts.slice(0, visible).map( (post, index) => (
                             <Card key={post.id} sx={{ marginBottom: 1 }}>
                                 <CardActionArea>
                                     <CardHeader
