@@ -15,10 +15,10 @@ import HomeIcon from '@mui/icons-material/Home';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import {BrowserRouter as Router, Switch, Route, Link, BrowserRouter} from "react-router-dom";
-import {Container} from "@mui/material";
 
 import Home from '../pages/Home'
 import PostList from '../pages/PostList'
+import PostDetail from '../pages/PostDetail'
 
 const drawerWidth = 240;
 
@@ -129,6 +129,7 @@ export default function App(props: Props) {
                         <Switch>
                             <Route exact={true} path="/" component={Home}></Route>
                             <Route exact={true} path="/posts" component={PostList}></Route>
+                            <Route exact={true} path="/posts/:id" component={PostDetail}></Route>
                         </Switch>
                     </Box>
                 </Box>
