@@ -54,7 +54,7 @@ export default function App(props: Props) {
                     <ListItemIcon>
                         <LibraryBooksIcon/>
                     </ListItemIcon>
-                    <ListItemText primary={"Posts List"}/>
+                    <ListItemText primary={"Post List"}/>
                 </ListItem>
             </List>
         </div>

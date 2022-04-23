@@ -28,7 +28,7 @@ export default function Home() {
                 {breadcrumbs}
             </Breadcrumbs>
             <Typography paragraph>
-                This is the assessment for Lizard Global Technical Test - Python Developer. Please click "Posts" menu to see
+                This is the assessment for Lizard Global Technical Test - Software Engineer. Please click "Post List" menu to see
                 all posts from mock API.
             </Typography>
         </Stack>
